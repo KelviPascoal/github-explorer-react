@@ -1,22 +1,22 @@
-import { Link } from 'react-router-dom';
-import styled, { css } from 'styled-components';
+import { Link } from "react-router-dom";
+import styled, { css } from "styled-components";
 
 export const Header = styled.header`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-display:flex;
-align-items: center;
-justify-content: space-between;
-
-p{
+  p {
     font-size: 18px;
-    color: #f54b64;
-}
-a{
+    color: #3D3D4D;
+  }
+  a {
     font-size: 14px;
-    color: #f54b64;
+    color: #A8A8B3;
     text-decoration: none;
+    
 }
-    `;
+`;
 
 export const RepositoryInfo = styled.div`
     display:flex;
@@ -35,11 +35,11 @@ export const RepositoryInfo = styled.div`
             }
             div{
                 strong{
-                    color: white;
+                    color: #3D3D4D;
 
                 }
                 p{
-                    color: white;
+                    color: #737380;
                 }
             }
     }
@@ -57,11 +57,11 @@ export const RepositoryInfo = styled.div`
             align-items: center;
 
             strong{
-                color: white;
+                color: #3D3D4D;
                 font-size: 32px;
             }
             span{
-                color: white;
+                color: #6C6C80;
                 }
             }
         }
@@ -69,48 +69,43 @@ export const RepositoryInfo = styled.div`
 `;
 
 export const Issues = styled.a`
-        
-        a{
-            margin-top: 80px;
-            background-color: #1d3752;
-            border-radius: 5px;
-            width: 100%;
-            padding: 24px;
-            display: block;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            transition: transform 0.2s;
+  a {
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 24px;
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
 
-            & + a {
-                margin-top: 16px;
-            }
+    & + a {
+      margin-top: 16px;
+    }
 
-            &:hover{
-              transform: translateX(10px);
-            }
+    &:hover {
+      transform: translateX(10px);
+    }
 
-        
-            div{
-                margin-left: 16px;
-                flex: 1;
+    div {
+      margin-left: 16px;
+      flex: 1;
 
-                strong{
-                    font-size: 20px;
-                    color: #1E90FF;
-                }
-                p{
-                    font-size: 18px;
-                    color: #a8a8b3;
-                }
-            }
-       
-            svg {
-                margin-left: auto;
-                color:  #cbcbd6;
-            }
-        }
+      strong {
+        font-size: 20px;
+        color: #3D3D4D;
+      }
+      p {
+        font-size: 18px;
+        color: #A8A8B3;
+      }
+    }
 
-        
-
+    svg {
+      margin-left: auto;
+      color: #cbcbd6;
+    }
+  }
 `;

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import bgcGit from '../assets/bgcGit.jpg'
+import githubImage from '../assets/githubImage.svg'
 
 export default createGlobalStyle`
     * {
@@ -10,9 +10,8 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: #05000c;
+        background: #f0f0f5 url(${githubImage}) no-repeat 70% top ;
         
-
         display: flex;
         align-items: center;
         justify-content: center;
