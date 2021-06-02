@@ -5,10 +5,8 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
 
-  svg {
-    margin-right: 4px;
-  }
   a {
+    font-weight: 700;
     display: flex;
     align-items: center;
     color: #a8a8b3;
@@ -37,6 +35,7 @@ export const RepositoryInfo = styled.div`
       }
     }
   }
+
   ul {
     max-width: 500px;
     display: flex;
@@ -54,6 +53,7 @@ export const RepositoryInfo = styled.div`
         color: #3d3d4d;
         font-size: 32px;
       }
+
       span {
         margin-top: 4px;
         display: block;
@@ -63,7 +63,7 @@ export const RepositoryInfo = styled.div`
   }
 `;
 
-export const Issues = styled.a`
+export const Issues = styled.div`
 
   a {
     margin-top: 80px;
@@ -105,7 +105,5 @@ export const Issues = styled.a`
     i {
       color: #C9C9D4;
     }
-
-   
   }
 `;

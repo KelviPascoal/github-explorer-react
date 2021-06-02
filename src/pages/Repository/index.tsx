@@ -47,7 +47,7 @@ const Repository: React.FC = () => {
         <>
             <Header >
                 <div><img src={Logo} alt="logo" /></div>
-                
+
                 <Link to=""><FiChevronLeft />voltar</Link>
             </Header>
             {repository && (
@@ -82,11 +82,10 @@ const Repository: React.FC = () => {
                             <p>{issue.user.login}</p>
                         </div>
                         <i>
-                        <FiChevronRight size={20} />
+                            <FiChevronRight size={20} />
                         </i>
                     </a>
                 ))}
-
             </Issues>
         </>
     )

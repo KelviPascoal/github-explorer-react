@@ -9,7 +9,7 @@ export const LogoContainer = styled.div``;
 
 export const Title = styled.h1`
   font-size: 48px;
-  font-weight: 700px;
+  font-weight: 700;
   color: #3a3a3a;
   max-width: 450px;
   margin-top: 80px;
@@ -44,6 +44,7 @@ export const Form = styled.form<FormProps>`
       color: #a8a8b3;
     }
   }
+  
   button {
     width: 210px;
     height: 70px;
