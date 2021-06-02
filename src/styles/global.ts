@@ -10,10 +10,10 @@ export default createGlobalStyle`
     }
 
     body {
-        background: #f0f0f5 url(${githubImage}) no-repeat 70% top ;
+        background: #f0f0f5 url(${githubImage}) no-repeat 70% top;
+        -webkit-font-smoothing: antialiased;
         
         display: flex;
-        align-items: center;
         justify-content: center;
     }
 
@@ -24,7 +24,7 @@ export default createGlobalStyle`
     }
 
     body, input, button {
-        font: 20px Roboto, sans-serief;
+        font: 16px Roboto, sans-serief;
     }
 
     button {

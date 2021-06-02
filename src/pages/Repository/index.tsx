@@ -1,7 +1,7 @@
 import { Link, useRouteMatch } from 'react-router-dom';
 import { Header, RepositoryInfo, Issues } from './styles';
 import { useEffect, useState } from 'react';
-import { FiChevronLeft } from 'react-icons/fi'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import api from '../../services/api';
 import Logo from '../../assets/Logo.svg'
 
@@ -48,7 +48,7 @@ const Repository: React.FC = () => {
     return (
         <>
             <Header >
-                <div><img src={Logo} alt="" /></div>
+                <div><img src={Logo} alt="logo" /></div>
                 
                 <Link to=""><FiChevronLeft />voltar</Link>
             </Header>
@@ -83,8 +83,12 @@ const Repository: React.FC = () => {
                             <strong>{issue.title}</strong>
                             <p>{issue.user.login}</p>
                         </div>
+                        <i>
+                        <FiChevronRight size={20} />
+                        </i>
                     </Link>
                 ))}
+
             </Issues>
         </>
     )

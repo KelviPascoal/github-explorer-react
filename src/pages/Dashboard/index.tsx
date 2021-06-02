@@ -24,7 +24,6 @@ const Dashboard: React.FC = () => {
         } else {
             return [];
         }
-
     });
 
     useEffect(() => {
@@ -44,9 +43,7 @@ const Dashboard: React.FC = () => {
 
         try {
             const response = await api.get<Repository>(`repos/${newRepo}`);
-
             const repository = response.data;
-
             setResositories([...repositories, repository]);
             setNewRepo('');
             setInputError('');
@@ -55,25 +52,23 @@ const Dashboard: React.FC = () => {
         }
     }
 
-
     return (
         <>
-            <LogoContainer><img src={Logo} alt="" /></LogoContainer>
-            <Title>Explore repositórios<br/> no Github</Title>
+            <LogoContainer><img src={Logo} alt="logo" /></LogoContainer>
+            <Title>Explore repositórios no Github</Title>
             <Form hasError={!!inputError} onSubmit={handleAddRepository}>
                 <input
                     value={newRepo}
                     onChange={(e) => setNewRepo(e.target.value)}
                     placeholder="Digite o nome do repositório" />
-                <button type="submit">pesquisar</button>
+                <button type="submit">Pesquisar</button>
             </Form>
-
             { inputError && <Error>{inputError}</Error>}
 
             <Repositories>
                 {repositories.map(repository => (
                     <Link key={repository.full_name} to={`/repositories/${repository.full_name}`}>
-                        <img src={repository.owner.avatar_url} alt="" />
+                        <img src={repository.owner.avatar_url} alt="avatar" />
                         <div>
                             <strong>{repository.full_name}</strong>
                             <p>{repository.description}</p>
