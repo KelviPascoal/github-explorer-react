@@ -5,8 +5,6 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import api from '../../services/api';
 import Logo from '../../assets/Logo.svg'
 
-import { FiPrinter } from 'react-icons/fi';
-
 interface RepositoryParams {
     repository: string;
 }
@@ -78,7 +76,7 @@ const Repository: React.FC = () => {
             )}
             <Issues>
                 {issues.map(issue => (
-                    <Link key={issue.id} to={issue.html_url}>
+                    <a key={issue.id} href={issue.html_url}>
                         <div>
                             <strong>{issue.title}</strong>
                             <p>{issue.user.login}</p>
@@ -86,7 +84,7 @@ const Repository: React.FC = () => {
                         <i>
                         <FiChevronRight size={20} />
                         </i>
-                    </Link>
+                    </a>
                 ))}
 
             </Issues>

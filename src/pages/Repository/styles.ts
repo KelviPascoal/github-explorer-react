@@ -19,7 +19,7 @@ export const Header = styled.header`
 export const RepositoryInfo = styled.div`
   header {
     display: flex;
-    align-items: center;
+
     img {
       width: 120px;
       height: 120px;
@@ -93,7 +93,7 @@ export const Issues = styled.a`
 
       strong {
         display: block;
-        font-size: 20px;
+        font-size: 24px;
         color: #3d3d4d;
       }
       p {
