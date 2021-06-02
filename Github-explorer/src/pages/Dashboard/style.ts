@@ -5,8 +5,14 @@ interface FormProps {
     hasError: boolean;
 }
 
+export const LogoContainer = styled.div`
+    margin-bottom: 100px;
+
+`;
+
 export const Title = styled.h1`
     font-size: 48px;
+    font-weight: 700px;
     color: #3A3A3A;
     padding-right: 40%;
     
@@ -17,7 +23,6 @@ export const Form = styled.form<FormProps>`
         max-width: 700px;
 
         display: flex;
-        align-items: center;
 
         input{
             flex: 1;
@@ -35,7 +40,7 @@ export const Form = styled.form<FormProps>`
             `}
 
             &::placeholder{
-                color: ##A8A8B3;
+                color: #A8A8B3;
             }
         }
         button{

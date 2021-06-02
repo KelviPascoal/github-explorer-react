@@ -1,7 +1,8 @@
 import { useState, FormEvent, useEffect } from 'react';
-import { Title, Form, Repositories, Error } from './style';
-import { FiChevronRight } from 'react-icons/fi';
+import { Title, Form, Repositories, Error, LogoContainer } from './style';
+import { FiChevronRight, FiPrinter } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/Logo.svg'
 import api from '../../services/api';
 
 interface Repository {
@@ -57,6 +58,7 @@ const Dashboard: React.FC = () => {
 
     return (
         <>
+            <LogoContainer><img src={Logo} alt="" /></LogoContainer>
             <Title>Explore repositórios<br/> no Github</Title>
             <Form hasError={!!inputError} onSubmit={handleAddRepository}>
                 <input

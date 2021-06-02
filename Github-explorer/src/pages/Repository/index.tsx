@@ -3,6 +3,8 @@ import { Header, RepositoryInfo, Issues } from './styles';
 import { useEffect, useState } from 'react';
 import { FiChevronLeft } from 'react-icons/fi'
 import api from '../../services/api';
+import Logo from '../../assets/Logo.svg'
+
 import { FiPrinter } from 'react-icons/fi';
 
 interface RepositoryParams {
@@ -46,7 +48,8 @@ const Repository: React.FC = () => {
     return (
         <>
             <Header >
-                <p>Github</p>
+                <div><img src={Logo} alt="" /></div>
+                
                 <Link to=""><FiChevronLeft />voltar</Link>
             </Header>
             {repository && (

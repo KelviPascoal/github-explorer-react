@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import githubImage from '../assets/githubImage.svg'
+import githubImage from '../assets/githubImage.svg';
 
 export default createGlobalStyle`
     * {
@@ -21,6 +21,10 @@ export default createGlobalStyle`
         max-width: 960;
         margin: 0 auto;
         padding: 40px 20px;
+    }
+
+    body, input, button {
+        font: 20px Roboto, sans-serief;
     }
 
     button {
